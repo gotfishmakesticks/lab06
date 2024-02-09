@@ -14,28 +14,31 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/but_new"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="on_new_note"
+            android:text="@string/but_new" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/but_edit"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="on_edit_note"
+            android:text="@string/btn_edit" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/but_del"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:onClick="on_note_delete"
+            android:text="@string/btn_del" />
     </LinearLayout>
 
     <LinearLayout
@@ -43,7 +46,8 @@
         android:layout_height="match_parent"
         android:orientation="horizontal">
 
-        <androidx.recyclerview.widget.RecyclerView
+        <ListView
+            android:id="@+id/cycler"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
     </LinearLayout>

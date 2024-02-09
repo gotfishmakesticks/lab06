@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">lab06</string>
+    <string name="but_new">New</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_del">Delete</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="note_name">Note Name</string>
+    <string name="note_content">Content</string>
 </resources>
