@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 index = position;
+                Toast.makeText(MainActivity.this, String.format("Selected note No.%d", index), Toast.LENGTH_LONG).show();
             }
         });
     }
@@ -53,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        Toast.makeText(this, String.format("Buy %d", resultCode), Toast.LENGTH_LONG).show();
         super.onActivityResult(requestCode, resultCode, data);
         if (resultCode == RESULT_CANCELED) {
             return;
